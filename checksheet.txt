@@ -1,0 +1,27 @@
+Home:
+	Ring Dance Information, when/where
+	Tradition
+	Class motto/info
+	
+Ring Dance:
+	Ticket Distribution
+	Ring Dance Info, where/when
+	History about Ring Dance
+	
+Ring Design:
+	Description about Ring Design, Ring Premiere and Ring Reveal video
+	Ring Brochure with issuu doc viewer, downloadable pdf
+	Info about purchasing, video
+	
+Events:
+	Events to know
+	
+Leadership Team:
+	Images of people
+	
+FAQ:
+	Questions
+
+All of these links should have a "contact" at the bottom, with email/social media handel
+Pick a common prettier font
+Each info section should have color differential, with our class colors
