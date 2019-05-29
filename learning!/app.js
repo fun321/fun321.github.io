@@ -69,7 +69,6 @@
 //         });
 //     }
 // });
-
 // rl.on('close', ()=>{
 //     console.log('Correct!');
 // });
@@ -77,3 +76,143 @@
 
 
 //WORKING WITH FILE SYSTEM MODULE
+// const fs = require('fs');
+// //create a file
+// fs.writeFile('example.txt', "this is an example", (err)=>{
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log('File successfully created');
+//         fs.readFile('example.txt', 'utf8',(err, file)=>{
+//             if (err) {
+//                 console.log(err);
+//             }
+//             else {
+//                 console.log(file);
+//             }
+//         });
+//     }
+// });
+
+// //renaming file
+// const fs = require('fs');
+// fs.rename('example.txt', 'example2.txt', (err)=>{
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log("Sucessfully renamed file");
+//     }
+// });
+
+// //appending data to file
+// const fs = require('fs');
+// fs.appendFile('example2.txt', 'hello world!', (err)=>{
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log("Append successful!");
+//     }
+// });
+
+// //deleting a file
+// const fs = require('fs');
+// fs.unlink('example2.txt', (err)=>{
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log('Delete successful!');
+//     }
+// });
+
+
+
+//WORKING WITH FILE SYSTEM MODULE PT 2
+// // creating folder
+// const fs = require('fs');
+// fs.mkdir('tutorial', (err)=>{
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log("Successfully created folder");
+//     }
+// });
+
+// //deleting folder
+// const fs = require('fs');
+// fs.rmdir('tutorial', (err)=>{
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log("Successfully deleted");
+//     }
+// });
+
+// // creating a folder then creating a file
+// const fs = require('fs');
+// fs.mkdir('tutorial', (err)=>{
+//     if (err) {
+//         console.log(err);
+//     } 
+//     else {
+//         console.log("Folder created");
+//         fs.writeFile('./tutorial/example.txt', "hello world!", (err)=>{
+//             if (err) {
+//                 console.log(err);
+//             }
+//             else {
+//                 console.log("Folder and file created!");
+//             }
+//         });
+//     }
+// });
+
+// // deleting a folder with file in it
+// const fs = require('fs');
+// fs.unlink('./tutorial/example.txt', (err)=>{
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log("file successfully deleted");
+//         fs.rmdir('tutorial', (err)=>{
+//             if (err) {
+//                 console.log(err);
+//             }
+//             else {
+//                 console.log("folder deleted");
+//             }
+//         })
+//     }
+// })
+
+// // deleting multiple files inside folder
+// const fs = require('fs');
+// fs.readdir('./example', (err, files)=>{
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log(files);
+//         for (let file of files) {
+//             fs.unlink('./example/' + file, (err)=>{
+//                 if (err) {
+//                     console.log(err);
+//                 }
+//                 else {
+//                     console.log("Successfully deleted file");
+//                 }
+//             })
+//         }
+//     }
+// })
+
+
+
+//WORKING WITH READABLE AND WRITABLE STREAMS
+
